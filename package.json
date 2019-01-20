@@ -8,14 +8,19 @@
   "license": "GPLv3",
   "private": true,
   "dependencies": {
+    "photon-colors": "^3.3.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
     "@storybook/cli": "^4.1.7",
+    "@storybook/react": "^4.1.7",
     "@types/react": "^16.7.20",
     "@typescript-eslint/eslint-plugin": "^0.2.1",
     "@typescript-eslint/parser": "^0.2.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
     "eslint": "^5.12.1",
     "init": "^0.1.2",
     "node-sass": "^4.11.0",
@@ -23,7 +28,12 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "sass": "^1.16.1",
+    "sass-loader": "^7.1.0",
     "sb": "^0.2.1",
+    "ts-loader": "^5.3.3",
     "typescript": "^3.2.4"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 1234 -c .storybook"
   }
 }
