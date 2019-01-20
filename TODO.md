@@ -1,8 +1,8 @@
-* TODO Components
+* Components
 - [ ] Button
 - [ ] Card
 - [ ] Doorhanger
-- [-] Input Fields
+- [ ] Input Fields
   - [ ] Checkbox
   - [ ] Radio
   - [ ] Text
