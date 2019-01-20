@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": [
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  ],
+  "rules": {
+    "eqeqeq": "on",
+    "indent": ["error", 4],
+    "quotes": ["error", "double"]
+  },
+  "plugins": [
+    "@babel/react"
+  ],
+  "extends": [
+  ]
+}

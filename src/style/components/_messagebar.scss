@@ -1,0 +1,76 @@
+@import "~photon-colors/photon-colors.scss";
+
+.messagebar {
+    border-radius: 4px;
+    display: flex;
+    min-height: 32px;
+    padding: 0 4px;
+
+    & > button {
+        align-self: center;
+        margin-left: 8px;
+    }
+
+    &--status {
+        &-generic {
+            background: $grey-20;
+        }
+
+        &-error {
+            color: white;
+            background: $red-50;
+            & > svg > path {
+                fill: white
+            }
+        }
+
+        &-success {
+            background: $green-50;
+        }
+
+        &-warning {
+            background: $yellow-50;
+        }
+    }
+
+    &--width {
+        &-auto {
+            display: inline-flex;
+            width: auto;
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        border-radius: 4px;
+        margin-left: 32px;
+        margin-right: 0;
+        padding-right: 0;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    /* Icon styling */
+    &__icon {
+        align-self: center;
+        display: inline;
+        margin-right: 4px;
+        padding: 4px;
+
+        & > * {
+            height: 16px;
+        }
+    }
+
+    &__message {
+        align-self: center;
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    &__spacer {
+        flex-grow: 1;
+    }
+}

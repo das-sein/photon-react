@@ -1,0 +1,81 @@
+@import "~photon-colors/photon-colors.scss";
+@import "../core/_shadow.scss";
+
+.card {
+    background: white;
+    border-radius: 4px;
+    box-sizing: inherit;
+    display: inline-block;
+}
+
+.card--size {
+    &-lg {
+        padding: 0px 20px;
+    }
+}
+
+.card--type {
+    &-button {
+        cursor: pointer;
+    }
+
+    &-button:hover {
+        box-shadow: 0 0 0 5px $grey-30;
+        transition: box-shadow 0.1s;
+
+        .typography--type-title {
+            color: $blue-60;
+        }
+    }
+}
+
+.card--width {
+    &-default {
+        width: 100%;
+    }
+
+    &-auto {
+        width: auto;
+    }
+}
+
+.card__header {
+    border-radius: 4px 4px 0px 0px;
+    height: 155px;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.card__body {
+    padding: 16px 16px 16px;
+
+    .typography--type-title {
+        margin: 0 0 4px;
+    }
+
+    & > .typography--type-caption {
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0 0 4px;
+        text-transform: uppercase;
+    }
+}
+
+.card__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    & > button {
+        width: 100%;
+    }
+
+    & > *:not(:first-child) {
+        /* Action button spacing according to grid. */
+        margin-left: 8px;
+    }
+}

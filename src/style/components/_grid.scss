@@ -1,0 +1,42 @@
+.grid__row {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, auto));
+  width: 100%;
+}
+
+.grid__row--align-center {
+  align-items: center;
+}
+
+.grid__row--align-bottom {
+  align-items: bottom;
+}
+
+.grid__col {
+  display: inline-grid;
+  grid-auto-flow: row;
+  width: 100%;
+
+  &--width-auto {
+    width: auto;
+  }
+}
+
+@each $i in 4, 8, 16, 32 {
+  .grid__col--gap-#{$i} {
+    grid-gap: #{$i}px;
+  }
+
+  .grid__col--margin-#{$i} {
+      margin-right: #{$i}px;
+  }
+
+  .grid__row--gap-#{$i} {
+      grid-gap: #{$i}px;
+  }
+
+  .grid__row--margin-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}

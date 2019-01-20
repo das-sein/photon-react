@@ -1,0 +1,140 @@
+@import "~photon-colors/photon-colors.scss";
+
+.button {
+  border: 0;
+  border-radius: 2px;
+  height: 32px;
+  min-width: 132px;
+  padding: 0 8px;
+  transition: box-shadow 50ms;
+  width: auto;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &:focus:enabled {
+    border: 0;
+    box-shadow:
+      0 0 0 1px $blue-50 inset,
+      0 0 0 1px $blue-50,
+      0 0 0 4px rgba(10, 132, 255, 0.3);
+    outline: 0;
+  }
+
+  &--size {
+    &-micro {
+      height: 24px;
+    }
+
+    &-puffy {
+      border-radius: 4px;
+      height: 48px;
+      padding: 0 16px;
+    }
+  }
+
+  &--status {
+    &-generic {
+      background: $grey-90-a10;
+      color: $grey-90;
+
+      &:hover:enabled {
+        background: $grey-90-a20;
+      }
+
+      &:active:enabled {
+        background: $grey-90-a30;
+      }
+    }
+
+    &-error {
+      background: $red-70;
+      color: white;
+
+      &:hover:enabled {
+        background: $red-80;
+      }
+
+      &:active:enabled {
+        background: $red-90;
+      }
+    }
+
+    &-primary {
+      background: $blue-60;
+      color: white;
+
+      &:hover:enabled {
+        background: $blue-70;
+      }
+
+      &:active:enabled {
+        background: $blue-80;
+      }
+    }
+
+    &-success {
+      background: $green-60;
+      color: $grey-90;
+      transition: color 100ms;
+
+      &:hover:enabled {
+        background: $green-70;
+        color: white;
+      }
+
+      &:active:enabled {
+        background: $green-80;
+        color: white;
+      }
+    }
+
+    &-warning {
+      background: $yellow-60;
+      color: $grey-90;
+      transition: color 100ms;
+
+      &:hover:enabled {
+        background: $yellow-70;
+        color: white;
+      }
+
+      &:active:enabled {
+        background: $yellow-80;
+        color: white;
+      }
+    }
+  }
+
+  &--type {
+    &-ghost {
+      background: transparent;
+      color: $grey-90-a80;
+      min-width: 0;
+      width: 32px;
+
+      &:hover:enabled {
+        background: $grey-90-a10;
+      }
+
+      &:active:enabled {
+        background: $grey-90-a20;
+      }
+
+      & > * {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  & > .typography {
+    color: inherit;
+  }
+
+  /* Disable Firefox button focus outlining. */
+  &::-moz-focus-inner {
+    border: 0;
+    outline: 0;
+  }
+}

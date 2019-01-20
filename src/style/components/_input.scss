@@ -1,0 +1,116 @@
+@import "~photon-colors/photon-colors.scss";
+@import "../core/_typography.scss";
+
+input {
+    @extend .typography--type-body;
+    @extend .typography--size-20;
+}
+
+.input__container--checkbox {
+    label {
+        margin-left: 4px;
+    }
+}
+
+.input__container--radio {
+    label {
+        margin-left: 4px;
+        vertical-align: super;
+    }
+}
+
+.input__container--text {
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+
+.input__container--checkbox, .input__container--text {
+    display: block;
+}
+
+.input--type-checkbox {
+    vertical-align: middle;
+
+    &:focus:enabled {
+        border: 0;
+        box-shadow:
+            0 0 0 1px $blue-50 inset,
+            0 0 0 1px $blue-50,
+            0 0 0 4px rgba(10, 132, 255, 0.3);
+        outline: 0;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+        outline: 0;
+    }
+}
+
+.input--type-radio {
+    border-radius: 100%;
+    &:focus:enabled {
+        border: 0;
+        box-shadow:
+            0 0 0 1px $blue-50 inset,
+            0 0 0 1px $blue-50,
+            0 0 0 4px rgba(10, 132, 255, 0.3);
+        outline: 0;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+        outline: 0;
+    }
+}
+
+.input--type-text {
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px $grey-90-a20;
+    height: 32px;
+    outline: 0;
+    padding: 0px 8px;
+}
+
+.input--status {
+    &-default {
+        &:focus:enabled {
+            box-shadow:
+                0 0 0 1px $blue-50 inset,
+                0 0 0 1px $blue-50,
+                0 0 0 4px rgba(10, 132, 255, 0.3);
+        }
+    }
+
+    &-warning {
+        &:focus:enabled {
+            box-shadow:
+                0 0 0 1px $yellow-60 inset,
+                0 0 0 1px $yellow-60,
+                0 0 0 4px rgba(215, 182, 0, 0.3);
+        }
+    }
+
+    &-error {
+        &:focus:enabled {
+            box-shadow:
+                0 0 0 1px $red-60 inset,
+                0 0 0 1px $red-60,
+                0 0 0 4px rgba(251, 0, 34, 0.3);
+        }
+    }
+}
+
+.input--nested {
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.input__sublabel {
+    color: $grey-90-a60;
+    display: table;
+    margin-left: 32px;
+}

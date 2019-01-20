@@ -1,0 +1,40 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm -g install yarn
+    - yarn --dev
+    - yarn rollup -c
+  artifacts:
+    paths:
+      - lib
+  only:
+    - master
+
+deploy:npm:
+  dependencies:
+    - build
+  stage: deploy
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPMTOKEN}' > .npmrc
+    - npm publish
+  only:
+    - master
+
+pages:
+  stage: deploy
+  script:
+    - npm -g install yarn
+    - yarn --dev
+    - yarn build-storybook -o public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

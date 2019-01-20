@@ -1,0 +1,57 @@
+@import "~photon-colors/photon-colors.scss";
+
+.tab {
+    background: transparent;
+    /* Transparent border for box-sizing */
+    border: 2px solid transparent;
+    box-sizing: content-box;
+    height: 32px;
+    outline: 0;
+    padding: 4px 16px;
+    transition: box-shadow 100ms;
+
+    & > div {
+        line-height: 32px;
+    }
+
+    &:focus {
+        border-bottom: 2px solid $blue-50;
+    }
+
+    &:hover {
+        background: $grey-90-a10;
+        border-bottom: 2px solid $grey-90-a20;
+    }
+
+    &:active:focus {
+        border-bottom: 2px solid transparent;
+        box-shadow:
+        0 0 0 1px $blue-50,
+        0 0 0 4px rgba(10, 132, 255, 0.3);
+        outline: 0;
+    }
+
+    &:focus:active {
+        background: $grey-90-a20;
+        border-bottom: 2px solid transparent;
+    }
+
+    &:focus:hover {
+        background: $grey-90-a10;
+        border-bottom: 2px solid $blue-50;
+    }
+
+    /* Disable Firefox button focus outlining. */
+    &::-moz-focus-inner {
+        border: 0;
+        outline: 0;
+    }
+}
+
+.tab--size {
+    &-lg {
+        & > .tab {
+            height: 48px;
+        }
+    }
+}
