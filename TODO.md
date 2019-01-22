@@ -1,6 +1,6 @@
 # Components
 
-- [ ] Button
+- [x] Button
 - [ ] Card
 - [ ] Doorhanger
 - [ ] Grid
