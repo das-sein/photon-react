@@ -11,6 +11,7 @@
 - [ ] Link
 - [ ] Message Bar
 - [ ] Tab
+- [x] Typography
 
 # Features
 
