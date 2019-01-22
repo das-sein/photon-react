@@ -1,7 +1,9 @@
 # Components
+
 - [ ] Button
 - [ ] Card
 - [ ] Doorhanger
+- [ ] Grid
 - [ ] Input Fields
   - [ ] Checkbox
   - [ ] Radio
@@ -9,3 +11,7 @@
 - [ ] Link
 - [ ] Message Bar
 - [ ] Tab
+
+# Features
+
+- [ ] Theming
