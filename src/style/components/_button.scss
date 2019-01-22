@@ -1,0 +1,88 @@
+@import "~photon-colors/photon-colors.scss";
+@import "../core/_typography.scss";
+
+.button {
+    @include typography-caption(20);
+    border: 0;
+    border-radius: 2px;
+    height: 32px;
+    min-width: 132px;
+    padding: 0 8px;
+    width: auto;
+
+    &:disabled {
+        opacity: 0.4;
+    }
+
+    &:focus:enabled {
+        border: 0;
+        box-shadow:
+            0 0 0 1px #0a84ff inset,
+            0 0 0 1px #0a84ff,
+            0 0 0 4px rgba(10, 132, 255, 0.3);
+        outline: 0;
+    }
+
+    &-default {
+        color: $grey-90;
+        background: $grey-90-a10;
+
+        &:hover:enabled {
+            background: $grey-90-a20;
+        }
+
+        &:active:enabled {
+            background: $grey-90-a30;
+        }
+    }
+
+    &-primary {
+        color: white;
+        background: $blue-60;
+
+        &:hover:enabled {
+            background: $blue-70;
+        }
+
+        &:active:enabled {
+            background: $blue-80;
+        }
+    }
+
+    &-ghost {
+        background: transparent;
+        color: $grey-90-a80;
+        min-width: 0;
+        width: 32px;
+
+        & > * {
+            vertical-align: top;
+        }
+
+        &:hover:enabled {
+            background: $grey-90-a10;
+        }
+
+        &:active:enabled {
+            background: $grey-90-a20;
+        }
+    }
+
+    &-micro {
+        @include typography-caption(10);
+        height: 24px;
+    }
+
+    &-puffy {
+        @include typography-caption(30);
+        border-radius: 4px;
+        height: 48px;
+        padding: 0 16px;
+    }
+
+    /* Disable Firefox button focus outlining. */
+    &::-moz-focus-inner {
+        border: 0;
+        outline: 0;
+    }
+}
