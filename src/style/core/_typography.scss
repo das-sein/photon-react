@@ -1,0 +1,61 @@
+.typography-body {
+    font-weight: 400;
+    /* Not included in spec, but makes the text more readable. */
+    line-height: 1.25rem;
+
+    &-10 {
+        font-size: 13px;
+    }
+
+    &-20 {
+        font-size: 15px;
+    }
+
+    &-30 {
+        font-size: 17px;
+    }
+}
+
+.typography-caption {
+    font-weight: 400;
+
+    &-10 {
+        font-size: 11px;
+    }
+
+    &-20 {
+        font-size: 13px;
+    }
+
+    &-30 {
+        font-size: 15px;
+    }
+}
+
+.typography-display {
+    font-weight: 200;
+
+    &-20 {
+        font-size: 36px;
+    }
+}
+
+.typography-title {
+    font-weight: 500;
+
+    &-10 {
+        font-size: 13px;
+    }
+
+    &-20 {
+        font-size: 17px;
+    }
+
+    &-30 {
+        font-size: 22px;
+    }
+
+    &-40 {
+        font-size: 28px;
+    }
+}
