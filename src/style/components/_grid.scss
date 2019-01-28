@@ -1,0 +1,16 @@
+.grid-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    margin-bottom: 4px;
+}
+
+@each $i in 4, 8, 16, 32 {
+    .grid-col-gap--#{$i} {
+        grid-gap: #{$i}px;
+    }
+
+    .grid-row-margin--#{$i} {
+        margin-bottom: #{$i}px;
+    }
+}
