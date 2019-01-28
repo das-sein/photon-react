@@ -15,13 +15,13 @@ export default {
     plugins: [
         resolve({
             browser: true,
-            extensions: ['.js', '.jsx', '.json']
+            extensions: ['.js', '.jsx', '.json', '.scss'],
         }),
-        commonjs(),
-        sass({ insert: true }),
         babel({
             exclude: 'node_modules/**',
             presets: ['@babel/react']
-        })
+        }),
+        commonjs(),
+        sass({ insert: true }),
     ]
 };
