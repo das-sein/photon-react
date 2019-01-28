@@ -67,7 +67,7 @@ export const cardStories =
                 </Card.Content>
             </Card.Body>
         ))
-        .add('header with content and actions', () => (
+        .add('header with content and action', () => (
             <Card.Body size={'md'} shadow={10}>
                 <Card.Header>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
@@ -76,6 +76,20 @@ export const cardStories =
                     A card with just some text that describes the given card.
                     <Card.Actions>
                         <Button primary text={"Some primary action"}></Button>
+                    </Card.Actions>
+                </Card.Content>
+            </Card.Body>
+        ))
+        .add('header with content and actions', () => (
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Header>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                    A card with just some text that describes the given card.
+                    <Card.Actions>
+                        <Button text={"Default Action"}></Button>
+                        <Button primary text={"Primary Action"}></Button>
                     </Card.Actions>
                 </Card.Content>
             </Card.Body>
