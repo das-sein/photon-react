@@ -85,4 +85,105 @@ export const gridStories =
                     </Card.Body>
                 </Grid.Row>
             </div>
-        ));
+        ))
+        .add('multiple grid rows of cards with actions', () => (
+            <div>
+                <Grid.Row gap={16} margin={32}>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                            <Card.Actions>
+                                <Button primary text={"Primary Action"} />
+                            </Card.Actions>
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                </Grid.Row>
+                <Grid.Row gap={32}>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                            <Card.Actions>
+                                <Button primary text={"Primary Action"} />
+                            </Card.Actions>
+                        </Card.Content>
+                    </Card.Body>
+                </Grid.Row>
+            </div>
+        ))
+        .add('grid column of cards', () => (
+            <Grid.Column gap={16}>
+                <Card.Body button size={'md'} shadow={10}>
+                    <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                        A card with just some text that describes the given card.
+                    </Card.Content>
+                </Card.Body>
+                <Card.Body button size={'md'} shadow={10}>
+                    <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                        A card with just some text that describes the given card.
+                    </Card.Content>
+                </Card.Body>
+                <Card.Body button size={'md'} shadow={10}>
+                    <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                        A card with just some text that describes the given card.
+                    </Card.Content>
+                </Card.Body>
+            </Grid.Column>
+        ))
+        .add('multiple grid columns of cards', () => (
+            <div>
+                <Grid.Column gap={16} margin={32}>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                </Grid.Column>
+                <Grid.Column gap={32}>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                    <Card.Body button size={'md'} shadow={10}>
+                        <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                            A card with just some text that describes the given card.
+                        </Card.Content>
+                    </Card.Body>
+                </Grid.Column>
+            </div>
+        ))

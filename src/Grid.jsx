@@ -21,8 +21,24 @@ function Row(props) {
 }
 Row.displayName = 'Grid.Row';
 
+function Column(props) {
+    let classes = classNames(
+        'grid-col',
+        {
+            [`grid-col-gap--${props.gap}`]: props.gap,
+            [`grid-col-margin--${props.margin}`]: props.margin
+        }
+    );
+    return (
+        <div className={classes}>
+            {props.children}
+        </div>
+    )
+}
+Column.displayName = 'Grid.Column';
 
 const Grid = {
+    Column,
     Row
 };
 

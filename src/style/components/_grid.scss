@@ -5,6 +5,11 @@
     grid-gap: 8px;
 }
 
+.grid-col {
+    display: inline-grid;
+    grid-auto-flow: row;
+}
+
 @each $i in 4, 8, 16, 32 {
     .grid-col-gap--#{$i} {
         grid-gap: #{$i}px;
@@ -12,5 +17,9 @@
 
     .grid-row-margin--#{$i} {
         margin-bottom: #{$i}px;
+    }
+
+    .grid-col-margin--#{$i} {
+        margin-right: #{$i}px;
     }
 }
