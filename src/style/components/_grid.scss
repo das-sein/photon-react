@@ -1,8 +1,8 @@
 .grid-row {
+    align-items: baseline;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(165px, auto));
     grid-gap: 8px;
-    margin-bottom: 4px;
 }
 
 @each $i in 4, 8, 16, 32 {

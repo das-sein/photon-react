@@ -3,8 +3,11 @@
 
 .card {
     border-radius: 4px;
-    min-width: 150px;
+    box-sizing: inherit;
+    display: inline-block;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 
     &-large {
         padding: 0 20px;
