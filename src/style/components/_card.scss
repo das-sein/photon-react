@@ -52,8 +52,13 @@
 .card-actions {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 
-    &:not(:first-child) {
+    & > button {
+        width: 100%;
+    }
+
+    & > *:not(:first-child) {
         /* Action button spacing according to grid. */
         margin-left: 8px;
     }
