@@ -6,7 +6,6 @@ const classNames = require('classnames');
 
 
 function TypographyBase(props) {
-    console.log(props);
     let sizes = {'sm': 10, 'md': 20, 'lg': 30};
     let size = sizes[props.size];
     let classes = classNames(
