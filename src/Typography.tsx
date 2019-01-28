@@ -1,17 +1,45 @@
-import '../style/core/_typography.scss';
+import './style/core/_typography.scss';
 
 import React from 'react';
-import * as classNames from 'classnames';
+
+const classNames = require('classnames');
 
 
-export default function Typography(props) {
+function TypographyBase(props) {
+    console.log(props);
+    let sizes = {'sm': 10, 'md': 20, 'lg': 30};
+    let size = sizes[props.size];
     let classes = classNames(
+        'typography',
         `typography-${props.type}`,
-        `typography-${props.type}-${size}`
+        `typography-${props.type}-${size}`,
+        {'typography-bold': props.bold}
     );
     return (
-        <span class={classes}>
+        <props.container className={classes}>
             {props.children}
-        </span>
+        </props.container>
     );
 }
+
+function createTypography(type) {
+    return (props) => (
+        <TypographyBase type={'body'} {...props}>
+            {props.children}
+        </TypographyBase>
+    )
+}
+
+const Body = createTypography('body');
+const Caption = createTypography('caption');
+const Display = createTypography('display');
+const Title = createTypography('title');
+
+const Typography = {
+    Body,
+    Caption,
+    Display,
+    Title
+};
+
+export default Typography;
