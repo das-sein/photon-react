@@ -24,7 +24,7 @@ function TypographyBase(props) {
 
 function createTypography(type) {
     return (props) => (
-        <TypographyBase type={'body'} {...props}>
+        <TypographyBase type={type} {...props}>
             {props.children}
         </TypographyBase>
     )
