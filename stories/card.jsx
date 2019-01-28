@@ -75,7 +75,6 @@ export const cardStories =
                 <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
                     <Card.Actions>
-                        <Button text={"Some default action"}></Button>
                         <Button primary text={"Some primary action"}></Button>
                     </Card.Actions>
                 </Card.Content>
