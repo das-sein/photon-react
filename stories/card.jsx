@@ -81,6 +81,16 @@ export const cardStories =
                 </Card.Content>
             </Card.Body>
         ))
+        .add('header with content button (auto sized)', () => (
+            <Card.Body auto button size={'md'} shadow={10}>
+                <Card.Header>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                    A card with just some text that describes the given card.
+                </Card.Content>
+            </Card.Body>
+        ))
         .add('header with content and action', () => (
             <Card.Body size={'md'} shadow={10}>
                 <Card.Header>
@@ -118,6 +128,22 @@ export const cardStories =
                         <Button text={"Default Action"}></Button>
                         <Button primary text={"Primary Action"}></Button>
                     </Card.Actions>
+                </Card.Content>
+            </Card.Body>
+        ))
+        .add('onClick', () => (
+            <Card.Body
+                auto
+                button
+                size={'md'}
+                shadow={10}
+                onClick={() => alert('Hello, Firefox!')}
+            >
+                <Card.Header>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
+                    A card with just some text that describes the given card.
                 </Card.Content>
             </Card.Body>
         ));

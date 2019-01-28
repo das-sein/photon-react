@@ -26,7 +26,7 @@ function Body(props) {
         }
     );
     return (
-        <div className={classes}>
+        <div className={classes} {...props}>
             {props.children}
         </div>
     );
