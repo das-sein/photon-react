@@ -25,10 +25,10 @@ export const buttonStories =
             <Button puffy text={"Button"} disabled />
         ))
         .add('default ghost', () => (
-            <Button ghost text={<img src="https://i.imgur.com/nVlbTYR.png" />} />
+            <Button ghost><img src="https://i.imgur.com/nVlbTYR.png" /></Button>
         ))
         .add('default ghost disabled', () => (
-            <Button ghost disabled text={<img src="https://i.imgur.com/nVlbTYR.png" />} />
+            <Button ghost disabled><img src="https://i.imgur.com/nVlbTYR.png" /></Button>
         ))
         .add('primary', () => (
             <Button primary text={"Button"} />
