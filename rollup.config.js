@@ -1,22 +1,27 @@
+import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import sass from 'rollup-plugin-sass';
-import typescript from 'rollup-plugin-typescript';
 
 import pkg from './package.json';
 
 
 export default {
-    input: 'src/main.ts',
+    input: 'src/main.js',
     output: [
         { file: pkg.main, format: 'cjs' }
     ],
     external: ['react'],
     plugins: [
-        resolve(),
+        resolve({
+            browser: true,
+            extensions: ['.js', '.jsx', '.json']
+        }),
         commonjs(),
         sass({ insert: true }),
-        typescript(),
-
+        babel({
+            exclude: 'node_modules/**',
+            presets: ['@babel/react']
+        })
     ]
 };

@@ -1,35 +1,43 @@
-module.exports = {
-    devtool: 'source-map',
+const path = require('path');
 
-    module: {
-        rules: [
+module.exports = (base, type) => {
+    base.module.rules.push({
+        test: /\.(eot|woff|woff2|ttf)$/,
+        use: [{
+            loader: 'file-loader',
+        }],
+        include: path.resolve(__dirname, '../node_modules/fira/')
+    });
+    base.module.rules.push({
+        test: /\.scss$/,
+        use: [
             {
-                test: /\.tsx?$/,
-                use: [{
-                        loader: 'ts-loader',
-                        options: {
-                            compilerOptions: {
-                                allowSyntheticDefaultImports: true,
-                                jsx: "react",
-                                lib: ["dom", "es2018"],
-                                module: "es6",
-                                target: "es2018"
-                            }
-                        }
-                }],
-                exclude: /node_modules/
+                loader: 'resolve-url-loader',
+                options: {
+                    absolute: true
+                }
             },
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-                exclude: /node_modules/
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true,
+                    sourceMapContents: false
+                },
             }
-        ]
-    },
-    resolve: {
-        modules: [
-            'src', 'node_modules'
         ],
-        extensions: ['.json', '.js', '.ts', '.tsx', '.scss']
-    }
-}
+        include: path.resolve(__dirname, '../src')
+    });
+    base.resolve.extensions.push(
+        '.js',
+        '.jsx',
+        '.ts',
+        '.tsx',
+        '.scss',
+        '.woff',
+        '.woff2',
+        '.ttf',
+        '.eof'
+    );
+
+    return base;
+};
