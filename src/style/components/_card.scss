@@ -9,6 +9,10 @@
     position: relative;
     width: 100%;
 
+    &-width--auto {
+        width: auto;
+    }
+
     &-large {
         padding: 0 20px;
     }

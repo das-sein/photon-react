@@ -21,6 +21,7 @@ function Body(props) {
         {
             'card-button': props.button,
             'card-large': props.large,
+            'card-width--auto': props.auto,
             [`shadow-${props.shadow}`]: props.shadow
         }
     );
