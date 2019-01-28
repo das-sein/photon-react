@@ -10,7 +10,7 @@ React components for the Firefox Photon design system.
 - [x] Button
 - [x] Card
 - [ ] Doorhanger
-- [ ] Grid
+- [x] Grid
 - [ ] Input Fields
   - [ ] Checkbox
   - [ ] Radio
