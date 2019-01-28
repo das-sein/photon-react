@@ -1,7 +1,7 @@
 # Components
 
 - [x] Button
-- [ ] Card
+- [x] Card
 - [ ] Doorhanger
 - [ ] Grid
 - [ ] Input Fields
