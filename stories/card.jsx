@@ -2,82 +2,82 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Button from '../src/Button';
-import { Card, CardActions, CardBody, CardHeader } from '../src/card';
+import Card from '../src/Card';
 
 
 export const cardStories =
     storiesOf('Card', module)
-        .add('blank ', () => <Card size={'md'} shadow={10} />)
+        .add('blank ', () => <Card.Body size={'md'} shadow={10} />)
         .add('only text body ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardBody>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Content>
                     A card with just some text.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('only long text body ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardBody>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Content>
                     A card with a considerable amount of text that should force
                     some kind of wrapping or other means of nicely displaying
                     the information to the user.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('text body with titling ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardBody title={"Some Title"} subtitle={"Subtitle"}>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('text body with long titling ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardBody
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Content
                     title={"Some Title About the Content That is Lengthy"}
                     subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('only header ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardHeader>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Header>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
-                </CardHeader>
-            </Card>
+                </Card.Header>
+            </Card.Body>
         ))
         .add('header with content ', () => (
-            <Card size={'md'} shadow={10}>
-                <CardHeader>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Header>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
-                </CardHeader>
-                <CardBody title={"Some Title"} subtitle={"Subtitle"}>
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('header with content button ', () => (
-            <Card button size={'md'} shadow={10}>
-                <CardHeader>
+            <Card.Body button size={'md'} shadow={10}>
+                <Card.Header>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
-                </CardHeader>
-                <CardBody title={"Some Title"} subtitle={"Subtitle"}>
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
-                </CardBody>
-            </Card>
+                </Card.Content>
+            </Card.Body>
         ))
         .add('header with content and actions', () => (
-            <Card size={'md'} shadow={10}>
-                <CardHeader>
+            <Card.Body size={'md'} shadow={10}>
+                <Card.Header>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Keulemans_common_fox.png/250px-Keulemans_common_fox.png" />
-                </CardHeader>
-                <CardBody title={"Some Title"} subtitle={"Subtitle"}>
+                </Card.Header>
+                <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                     A card with just some text that describes the given card.
-                    <CardActions>
+                    <Card.Actions>
                         <Button text={"Some default action"}></Button>
                         <Button primary text={"Some primary action"}></Button>
-                    </CardActions>
-                </CardBody>
-            </Card>
+                    </Card.Actions>
+                </Card.Content>
+            </Card.Body>
         ));
