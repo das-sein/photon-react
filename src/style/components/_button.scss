@@ -1,8 +1,5 @@
 @import "~photon-colors/photon-colors.scss";
-@import "../core/_typography.scss";
-
 .button {
-    @include typography-caption(20);
     border: 0;
     border-radius: 2px;
     height: 32px;
@@ -56,7 +53,7 @@
         width: 32px;
 
         & > * {
-            vertical-align: top;
+            vertical-align: middle;
         }
 
         &:hover:enabled {
@@ -69,12 +66,10 @@
     }
 
     &-micro {
-        @include typography-caption(10);
         height: 24px;
     }
 
     &-puffy {
-        @include typography-caption(30);
         border-radius: 4px;
         height: 48px;
         padding: 0 16px;
