@@ -17,11 +17,9 @@ export default function Button(props) {
         }
     );
     // Figure out what size the caption should be
-    let typo_size = 'md'; // Medium caption as default
+    let typo_size = 'lg'; // Medium caption as default
     if (props.micro) {
         typo_size = 'sm';
-    } else if (props.puffy) {
-        typo_size = 'lg';
     }
     return (
         <button type={'button'} className={classes} {...props}>
