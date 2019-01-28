@@ -13,6 +13,7 @@ function Actions(props) {
         </div>
     );
 }
+Actions.displayName = 'Card.Actions';
 
 function Body(props) {
     let classes = classNames(
@@ -29,6 +30,7 @@ function Body(props) {
         </div>
     );
 }
+Body.displayName = 'Card.Body';
 
 function Content(props) {
     return (
@@ -49,6 +51,7 @@ function Content(props) {
         </div>
     );
 }
+Content.displayName = 'Card.Content';
 
 function Header(props) {
     return (
@@ -57,6 +60,7 @@ function Header(props) {
         </div>
     )
 }
+Header.displayName = 'Card.Header';
 
 const Card = {
     Body,
