@@ -52,10 +52,6 @@
         min-width: 0;
         width: 32px;
 
-        & > * {
-            vertical-align: middle;
-        }
-
         &:hover:enabled {
             background: $grey-90-a10;
         }
@@ -73,6 +69,10 @@
         border-radius: 4px;
         height: 48px;
         padding: 0 16px;
+    }
+
+    & > .typography {
+        color: inherit;
     }
 
     /* Disable Firefox button focus outlining. */
