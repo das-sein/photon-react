@@ -1,3 +1,13 @@
+@import "~fira/fira-sans.scss";
+
+.typography {
+    font-family: "Fira Sans";
+
+    &-bold {
+        font-weight: 700;
+    }
+}
+
 .typography-body {
     font-weight: 400;
     /* Not included in spec, but makes the text more readable. */
@@ -41,21 +51,23 @@
 }
 
 .typography-title {
-    font-weight: 500;
-
     &-10 {
         font-size: 13px;
+        font-weight: 500;
     }
 
     &-20 {
         font-size: 17px;
+        font-weight: 500;
     }
 
     &-30 {
         font-size: 22px;
+        font-weight: 300;
     }
 
     &-40 {
         font-size: 28px;
+        font-weight: 300;
     }
 }
