@@ -14,10 +14,14 @@ function TypographyBase(props) {
         `typography-${props.type}-${size}`,
         {'typography-bold': props.bold}
     );
+    let container = { 'container': props.container };
+    if (!props.container) {
+        container['container'] = 'div';
+    }
     return (
-        <props.container className={classes}>
+        <container.container className={classes}>
             {props.children}
-        </props.container>
+        </container.container>
     );
 }
 
