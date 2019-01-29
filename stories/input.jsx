@@ -6,6 +6,8 @@ import Grid from '../src/Grid';
 import Input from '../src/Input';
 
 /* Icons for display purposes */
+import LoginIcon from 'photon-icons/icons/desktop/login-16.svg';
+import MailIcon from 'photon-icons/icons/desktop/mail-16.svg';
 import SearchIcon from 'photon-icons/icons/desktop/search-16.svg';
 import WarningIcon from 'photon-icons/icons/desktop/warning-16.svg';
 
@@ -48,19 +50,23 @@ export const inputStories =
         ))
         .add('example login form with Button, Grid, and Card', () => (
             <Card.Body auto size={'md'} shadow={10}>
-                <Card.Content>
+                <Card.Content title={'Login'}>
                     <form>
-                        <Grid.Column gap={4}>
+                        <Grid.Column gap={8}>
                             <Input.Text
+                                inner
                                 name={'username'}
                                 label={'Username'}
                                 placeholder={'Username or email address'}
+                                icon={<MailIcon />}
                             />
                             <Input.Text
+                                inner
                                 password
                                 name={'password'}
                                 label={'Password'}
                                 placeholder={'Password'}
+                                icon={<LoginIcon />}
                             />
                         </Grid.Column>
                         <Card.Actions>

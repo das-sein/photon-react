@@ -12,11 +12,16 @@ function Text(props) {
         'input',
         `input-status--${status}`,
         {
-            'input--with-icon': props.icon
+            'input--with-icon': props.icon,
         }
     );
     let type = props.password ? 'password' : 'text';
-    let input = (<input type={type} className={classes} {...props} />);
+    let icon_classes = classNames(
+        'icon',
+        {
+            'icon-placement--inner': props.inner
+        }
+    );
     return (
         <div class={'input-container'}>
             {props.label &&
@@ -26,9 +31,9 @@ function Text(props) {
                  </Typography.Caption>
              </label>
             }
-            {input}
-            <div className={'icon'}>
+            <div className={icon_classes}>
                 {props.icon}
+                <input type={type} className={classes} {...props} />
             </div>
         </div>
     );

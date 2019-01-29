@@ -10,14 +10,17 @@
         display: block;
     }
 
-    .icon {
-        bottom: 28px;
-        padding: 4px;
-        position: relative;
-        width: 16px;
-
+    .icon-placement--inner {
         & > svg {
-            padding: 0 4px;
+            left: 24px !important;
+        }
+    }
+
+    .icon {
+        & > svg {
+            left: 18px;
+            padding-top: 8px;
+            position: absolute;
 
             & > path {
                 fill: $grey-90-a60;
@@ -41,7 +44,7 @@
     }
 
     &--with-icon {
-        padding: 0 8px 0 32px;
+        padding: 0 8px 0 36px;
     }
 
     &-status {
