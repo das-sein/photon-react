@@ -1,3 +1,4 @@
+import './style/core/_base.scss';
 import './style/core/_typography.scss';
 
 import React from 'react';

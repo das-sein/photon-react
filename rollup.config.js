@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import reactSvg from 'rollup-plugin-react-svg';
 import sass from 'rollup-plugin-sass';
+import svg from 'rollup-plugin-svg';
 
 import pkg from './package.json';
 
@@ -29,7 +30,7 @@ export default {
                 multipass: true
             },
             jsx: true,
-            include: 'node_modules/photon-icons/icons/desktop/**'
-        })
+        }),
+        svg()
     ]
 };

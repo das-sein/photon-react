@@ -68,6 +68,7 @@ export const inputStories =
                                 placeholder={'Password'}
                                 icon={<LoginIcon />}
                             />
+                            <a href="#">Reset password</a>
                         </Grid.Column>
                         <Card.Actions>
                             <Button.Default

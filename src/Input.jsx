@@ -1,3 +1,4 @@
+import './style/core/_base.scss';
 import './style/components/_input.scss';
 
 import React from 'react';

@@ -1,9 +1,15 @@
 import Button from './Button';
-import Typography from './Typography';
 import Card from './Card';
+import Grid from './Grid';
+import Input from './Input';
+import MessageBar from './MessageBar';
+import Typography from './Typography';
 
 export {
     Button,
     Card,
+    Grid,
+    Input,
+    MessageBar,
     Typography
-};
+}

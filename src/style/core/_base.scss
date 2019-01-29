@@ -1,0 +1,30 @@
+@import "~photon-colors/photon-colors.scss";
+@import './_typography.scss';
+
+body {
+    @extend .typography-body-20;
+}
+
+a {
+    color: $blue-60;
+    border-radius: 4px;
+    padding: 0 8px;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue-60;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $blue-70;
+    }
+
+    &:focus {
+        border: 0;
+        outline: 0;
+        box-shadow:
+            0 0 0 2px $blue-50,
+            0 0 0 6px rgba(10, 132, 255, 0.3)
+    }
+}

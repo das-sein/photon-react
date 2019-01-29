@@ -15,7 +15,7 @@ React components for the Firefox Photon design system.
   - [ ] Checkbox
   - [ ] Radio
   - [x] Text
-- [ ] Link
+- [x] Link
 - [x] Message Bar
 - [ ] Tab
 - [x] Typography

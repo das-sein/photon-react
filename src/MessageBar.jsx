@@ -1,3 +1,4 @@
+import './style/core/_base.scss';
 import './style/components/_messagebar.scss';
 /* Icons */
 import CheckIcon from 'photon-icons/icons/desktop/check-16.svg';

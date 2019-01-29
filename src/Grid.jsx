@@ -1,3 +1,4 @@
+import './style/core/_base.scss';
 import './style/components/_grid.scss';
 
 import React from 'react';
