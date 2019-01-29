@@ -23,3 +23,8 @@ React components for the Firefox Photon design system.
 ## Features
 
 - [ ] Theming
+
+## Documentation
+
+- [ ] Example To-do UI
+- [ ] Component PropTypes
