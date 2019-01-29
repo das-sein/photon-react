@@ -45,4 +45,4 @@ export const buttonStories =
             <Button.Default status={'warning'}>
                 Warning Button
             </Button.Default>
-        ))
+        ));
