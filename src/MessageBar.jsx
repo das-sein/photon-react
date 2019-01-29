@@ -10,7 +10,6 @@ import React from 'react';
 import Button from './Button';
 import Typography from './Typography';
 
-
 const classNames = require('classnames');
 
 

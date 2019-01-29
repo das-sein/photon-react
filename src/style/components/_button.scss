@@ -1,4 +1,5 @@
 @import "~photon-colors/photon-colors.scss";
+
 .button {
     border: 0;
     border-radius: 2px;
@@ -14,8 +15,8 @@
     &:focus:enabled {
         border: 0;
         box-shadow:
-            0 0 0 1px #0a84ff inset,
-            0 0 0 1px #0a84ff,
+            0 0 0 1px $blue-50 inset,
+            0 0 0 1px $blue-50,
             0 0 0 4px rgba(10, 132, 255, 0.3);
         outline: 0;
     }
