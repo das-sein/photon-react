@@ -11,18 +11,23 @@ export const buttonStories =
                     Generic Button
                 </Button.Default>
         ))
+        .add('button generic status (onClick)', () => (
+            <Button.Default onClick={() => alert('Hello, Firefox!')}>
+                Generic Button
+            </Button.Default>
+        ))
         .add('button generic status (disabled)', () => (
             <Button.Default disabled>
                 Generic Button
             </Button.Default>
         ))
-        .add('button generic status (micro)', () => (
-            <Button.Default size={'micro'}>
+        .add('button generic status (puffy)', () => (
+            <Button.Default size={'puffy'}>
                 Generic Button
             </Button.Default>
         ))
-        .add('button generic status (puffy)', () => (
-            <Button.Default size={'puffy'}>
+        .add('button generic status (micro)', () => (
+            <Button.Default size={'micro'}>
                 Generic Button
             </Button.Default>
         ))
