@@ -6,45 +6,43 @@ import Button from '../src/Button';
 
 export const buttonStories =
     storiesOf('Button', module)
-        .add('default', () => (
-            <Button text={"Button"} />
+        .add('button generic status', () => (
+                <Button.Default>
+                    Generic Button
+                </Button.Default>
         ))
-        .add('default disabled', () => (
-            <Button text={"Button"} disabled />
+        .add('button generic status (disabled)', () => (
+            <Button.Default disabled>
+                Generic Button
+            </Button.Default>
         ))
-        .add('default (micro)', () => (
-            <Button micro text={"Button"} />
+        .add('button generic status (micro)', () => (
+            <Button.Default size={'micro'}>
+                Generic Button
+            </Button.Default>
         ))
-        .add('default disabled (micro)', () => (
-            <Button micro text={"Button"} disabled />
+        .add('button generic status (puffy)', () => (
+            <Button.Default size={'puffy'}>
+                Generic Button
+            </Button.Default>
         ))
-        .add('default (puffy)', () => (
-            <Button puffy text={"Button"} />
+        .add('button primary status', () => (
+            <Button.Default status={'primary'}>
+                Primary Button
+            </Button.Default>
         ))
-        .add('default disabled (puffy)', () => (
-            <Button puffy text={"Button"} disabled />
+        .add('button error status', () => (
+            <Button.Default status={'error'}>
+                Error Button
+            </Button.Default>
         ))
-        .add('default ghost', () => (
-            <Button ghost><img src="https://i.imgur.com/nVlbTYR.png" /></Button>
+        .add('button success status', () => (
+            <Button.Default status={'success'}>
+                Success Button
+            </Button.Default>
         ))
-        .add('default ghost disabled', () => (
-            <Button ghost disabled><img src="https://i.imgur.com/nVlbTYR.png" /></Button>
+        .add('button warning status', () => (
+            <Button.Default status={'warning'}>
+                Warning Button
+            </Button.Default>
         ))
-        .add('primary', () => (
-            <Button primary text={"Button"} />
-        ))
-        .add('primary disabled', () => (
-            <Button primary text={"Button"} disabled />
-        ))
-        .add('primary (micro)', () => (
-            <Button primary micro text={"Button"} />
-        ))
-        .add('primary disabled (micro)', () => (
-            <Button primary micro text={"Button"} disabled />
-        ))
-        .add('primary (puffy)', () => (
-            <Button primary puffy text={"Button"} />
-        ))
-        .add('primary disabled (puffy)', () => (
-            <Button primary puffy text={"Button"} disabled />
-        ));

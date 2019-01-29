@@ -20,55 +20,106 @@
         outline: 0;
     }
 
-    &-default {
-        color: $grey-90;
-        background: $grey-90-a10;
-
-        &:hover:enabled {
-            background: $grey-90-a20;
+    &-size {
+        &--micro {
+            height: 24px;
         }
 
-        &:active:enabled {
-            background: $grey-90-a30;
-        }
-    }
-
-    &-primary {
-        color: white;
-        background: $blue-60;
-
-        &:hover:enabled {
-            background: $blue-70;
-        }
-
-        &:active:enabled {
-            background: $blue-80;
+        &--puffy {
+            border-radius: 4px;
+            height: 48px;
+            padding: 0 16px;
         }
     }
 
-    &-ghost {
-        background: transparent;
-        color: $grey-90-a80;
-        min-width: 0;
-        width: 32px;
-
-        &:hover:enabled {
+    &-status {
+        &--generic {
             background: $grey-90-a10;
+            color: $grey-90;
+
+            &:hover:enabled {
+                background: $grey-90-a20;
+            }
+
+            &:active:enabled {
+                background: $grey-90-a30;
+            }
         }
 
-        &:active:enabled {
-            background: $grey-90-a20;
+        &--error {
+            background: $red-70;
+            color: white;
+
+            &:hover:enabled {
+                background: $red-80;
+            }
+
+            &:active:enabled {
+                background: $red-90;
+            }
+        }
+
+        &--primary {
+            background: $blue-60;
+            color: white;
+
+            &:hover:enabled {
+                background: $blue-70;
+            }
+
+            &:active:enabled {
+                background: $blue-80;
+            }
+        }
+
+        &--success {
+            background: $green-60;
+            color: $grey-90;
+            transition: color 100ms;
+
+            &:hover:enabled {
+                background: $green-70;
+                color: white;
+            }
+
+            &:active:enabled {
+                background: $green-80;
+                color: white;
+            }
+        }
+
+        &--warning {
+            background: $yellow-60;
+            color: $grey-90;
+            transition: color 100ms;
+
+            &:hover:enabled {
+                background: $yellow-70;
+                color: white;
+            }
+
+            &:active:enabled {
+                background: $yellow-80;
+                color: white;
+            }
         }
     }
 
-    &-micro {
-        height: 24px;
-    }
+    &-type {
+        &--ghost {
+            background: transparent;
+            color: $grey-90-a80;
+            min-width: 0;
+            width: 32px;
 
-    &-puffy {
-        border-radius: 4px;
-        height: 48px;
-        padding: 0 16px;
+            &:hover:enabled {
+                background: $grey-90-a10;
+            }
+
+            &:active:enabled {
+                background: $grey-90-a20;
+            }
+        }
     }
 
     & > .typography {

@@ -6,31 +6,47 @@ import Typography from './Typography';
 const classNames = require('classnames');
 
 
-export default function Button(props) {
-    let classes = classNames(
-        'button',
-        props.primary ? 'button-primary' : 'button-default',
-        {
-            'button-ghost': props.ghost,
-            'button-micro': props.micro,
-            'button-puffy': props.puffy
-        }
-    );
-    // Figure out what size the caption should be
-    let typo_size = 'md'; // Body-10 as default
-    if (props.micro) {
-        typo_size = 'sm';
-    } else if (props.puffy) {
-        typo_size = 'lg';
-    }
-    return (
-        <button type={'button'} className={classes} {...props}>
-            {!props.ghost &&
-             <Typography.Body size={typo_size} container={'div'}>
-                 {props.text}
-             </Typography.Body>
+function createButton(type) {
+    return (props) => {
+        let button_type = type ? type : 'default';
+        let container = props.container ? props.container : 'div';
+        let typo_sizes = {'default': 'md', 'micro': 'sm', 'puffy': 'lg'};
+        let status = props.status ? props.status : 'generic';
+        let classes = classNames(
+            'button',
+            `button-status--${status}`,
+            {
+                [`button-size--${props.size}`]: props.size,
+                'button-type--ghost': button_type === 'ghost'
             }
-            {props.ghost && props.children}
-        </button>
-    );
+        );
+        if (type === 'ghost') {
+            return (
+                <button type={'button'} className={classes} {...props}>
+                    {props.children}
+                </button>
+            );
+        } else {
+            return (
+                <button type={'button'} className={classes} {...props}>
+                    <Typography.Body size={typo_sizes[props.size]} container={container}>
+                        {props.children}
+                    </Typography.Body>
+                </button>
+            );
+        }
+    }
 }
+
+const Default = createButton('default');
+Default.displayName = 'Button.Default';
+
+const Ghost = createButton('ghost');
+Ghost.displayName = 'Button.Ghost';
+
+const Button = {
+    Default,
+    Ghost
+};
+
+export default Button;
