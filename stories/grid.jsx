@@ -37,7 +37,7 @@ export const gridStories =
                     <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                         A card with just some text that describes the given card.
                         <Card.Actions>
-                            <Button primary text={"Primary Action"} />
+                            <Button.Default status={'primary'}>Primary Action</Button.Default>
                         </Card.Actions>
                     </Card.Content>
                 </Card.Body>
@@ -93,7 +93,7 @@ export const gridStories =
                         <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                             A card with just some text that describes the given card.
                             <Card.Actions>
-                                <Button primary text={"Primary Action"} />
+                                <Button.Default status={'primary'}>Primary Action</Button.Default>
                             </Card.Actions>
                         </Card.Content>
                     </Card.Body>
@@ -123,7 +123,7 @@ export const gridStories =
                         <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                             A card with just some text that describes the given card.
                             <Card.Actions>
-                                <Button primary text={"Primary Action"} />
+                                <Button.Default status={'primary'}>Primary Action</Button.Default>
                             </Card.Actions>
                         </Card.Content>
                     </Card.Body>
