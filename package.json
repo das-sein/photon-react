@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "photon-colors": "^3.3.1",
+    "photon-icons": "^4.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
@@ -29,9 +30,11 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.1",
+    "rollup-plugin-react-svg": "^2.1.0",
     "rollup-plugin-sass": "^1.1.0",
     "sass": "^1.16.1",
-    "sb": "^0.2.1"
+    "sb": "^0.2.1",
+    "svg-react-loader": "^0.4.6"
   },
   "scripts": {
     "storybook": "start-storybook -p 1234 -s ./"
