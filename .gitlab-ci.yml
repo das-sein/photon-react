@@ -1,4 +1,4 @@
-image: node-yarn:latest
+image: yarn:latest
 
 pages:
   stage: deploy
