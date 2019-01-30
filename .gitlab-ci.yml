@@ -4,7 +4,8 @@ pages:
   stage: deploy
   script:
     - "npm -g install yarn"
-    - "yarn build-storybook"
+    - "yarn --dev"
+    - "yarn build-storybook -o public/"
   artifacts:
     paths:
-      - "storybook-static/"
+      - public
