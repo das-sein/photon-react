@@ -15,7 +15,8 @@ build:
     paths:
       - lib
   cache:
-    - node_modules/
+    paths:
+      - node_modules/
 
 deploy:npm:
   dependencies:
