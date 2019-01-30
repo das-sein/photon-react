@@ -8,19 +8,31 @@ stages:
 build:
   stage: build
   script:
-    - "npm -g install yarn"
-    - "yarn --dev"
-    - "yarn rollup -c"
+    - npm -g install yarn
+    - yarn --dev
+    - yarn rollup -c
   artifacts:
     paths:
       - lib
+  cache:
+    - node_modules/
+
+deploy:npm:
+  dependencies:
+    - build
+  stage: deploy
+  script:
+    - npm -g install yarn
+    - npm version "`cat VERSION`"
+    - echo '//registry.npmjs.org/:_authToken=${NPMTOKEN}' > .npmrc
+    - npm publish
 
 pages:
   stage: deploy
   script:
-    - "npm -g install yarn"
-    - "yarn --dev"
-    - "yarn build-storybook -o public/"
+    - npm -g install yarn
+    - yarn --dev
+    - yarn build-storybook -o public/
   artifacts:
     paths:
       - public
