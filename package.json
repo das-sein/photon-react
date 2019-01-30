@@ -1,11 +1,11 @@
 {
   "name": "photon-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React components for the Firefox Photon design system.",
   "main": "lib/main.js",
   "repository": "git@gitlab.com:fotocoyotl/photon-react.git",
   "author": "Trevor Miranda <trevor.miranda@pm.me>",
-  "license": "GPLv3",
+  "license": "GPL-3.0-only",
   "private": false,
   "dependencies": {
     "photon-colors": "^3.3.1",
@@ -40,5 +40,10 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 1234 -s ./"
-  }
+  },
+  "keywords": [
+    "photon",
+    "firefox",
+    "design"
+  ]
 }
