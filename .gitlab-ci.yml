@@ -1,7 +1,8 @@
+image: node:latest
+
 pages:
   stage: deploy
   script:
-    - "apt install nodejs"
     - "npm -g install yarn"
     - "yarn build-storybook"
   artifacts:
