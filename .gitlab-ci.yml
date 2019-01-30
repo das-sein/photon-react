@@ -20,8 +20,6 @@ deploy:npm:
     - build
   stage: deploy
   script:
-    - npm -g install yarn
-    - npm version "`cat VERSION`"
     - echo '//registry.npmjs.org/:_authToken=${NPMTOKEN}' > .npmrc
     - npm publish
 
