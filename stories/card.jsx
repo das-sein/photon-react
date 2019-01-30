@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Button from '../src/Button';
 import Card from '../src/Card';
+import Grid from '../src/Grid';
 
 
 export const cardStories =
@@ -28,6 +29,25 @@ export const cardStories =
                     A card with just some text that describes the given card.
                 </Card.Content>
             </Card.Body>
+        ))
+        .add('shadows' ,() => (
+            <Grid.Column auto gap={32}>
+                <Card.Body auto size={'md'} shadow={10}>
+                    <Card.Content title={"Shadow 10"} subtitle={"Subtitle"}>
+                        A card with a shadow of value 10.
+                    </Card.Content>
+                </Card.Body>
+                <Card.Body auto size={'md'} shadow={20}>
+                    <Card.Content title={"Shadow 20"} subtitle={"Subtitle"}>
+                        A card with a shadow of value 20.
+                    </Card.Content>
+                </Card.Body>
+                <Card.Body auto size={'md'} shadow={30}>
+                    <Card.Content title={"Shadow 30"} subtitle={"Subtitle"}>
+                        A card with a shadow of value 30.
+                    </Card.Content>
+                </Card.Body>
+            </Grid.Column>
         ))
         .add('only header', () => (
             <Card.Body size={'md'} shadow={10}>
