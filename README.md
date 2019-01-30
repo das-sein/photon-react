@@ -37,7 +37,7 @@ If you want to run it locally:
   - [x] Text
 - [x] Link
 - [x] Message Bar
-- [ ] Tab
+- [x] Tab
 - [x] Typography
 
 ## Features
