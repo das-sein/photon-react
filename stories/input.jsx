@@ -119,6 +119,7 @@ export const inputStories =
                     nestednested
                     name={'some-check-2'}
                     label={'So far, this is the farthest we can nest.'}
+                    sublabel={'A sublabel for the checkbox that describes it.'}
                 />
             </div>
         ))
