@@ -2,6 +2,7 @@ import './style/core/_base.scss';
 import './style/components/_button.scss';
 
 import React from 'react';
+
 import Typography from './Typography';
 
 const classNames = require('classnames');

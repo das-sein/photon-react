@@ -27,6 +27,22 @@
             }
         }
     }
+
+    /* Handle radio button case */
+    &--radio {
+        padding: 3px 0;
+
+        & > label {
+            display: inline-block;
+        }
+
+        & > input[type="radio"] {
+            margin-left: 4px;
+            vertical-align: text-bottom;
+            height: 16px;
+            width: 16px;
+        }
+    }
 }
 
 .input {

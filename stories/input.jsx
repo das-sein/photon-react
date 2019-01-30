@@ -86,3 +86,6 @@ export const inputStories =
                 </Card.Content>
             </Card.Body>
         ))
+        .add('radio button', () => (
+            <Input.Radio name={'some-option'} label={'This is some radio option'} />
+        ))

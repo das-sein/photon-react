@@ -13,7 +13,7 @@ React components for the Firefox Photon design system.
 - [x] Grid
 - [ ] Input Fields
   - [ ] Checkbox
-  - [ ] Radio
+  - [x] Radio
   - [x] Text
 - [x] Link
 - [x] Message Bar

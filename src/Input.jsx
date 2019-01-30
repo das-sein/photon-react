@@ -7,6 +7,18 @@ import Typography from './Typography';
 const classNames = require('classnames');
 
 
+function Radio(props) {
+    return (
+        <div className={'input-container--radio'}>
+            <input name={props.name} type={'radio'} {...props} />
+            <label for={props.name}>
+                <Typography.Body>{props.label}</Typography.Body>
+            </label>
+        </div>
+    );
+}
+
+
 function Text(props) {
     let status = props.status ? props.status : 'default';
     let classes = classNames(
@@ -41,6 +53,7 @@ function Text(props) {
 }
 
 const Input = {
+    Radio,
     Text
 };
 
