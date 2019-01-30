@@ -4,6 +4,15 @@ React components for the Firefox Photon design system.
 
 # Usage
 
+`yarn add photon-react`
+
+Or
+
+`npm install photon-react`
+
+
+# Documentation
+
 Currently, documentation is only present as a result of Storybook component tests. You can see examples of the components in action, as well as the source used to generate those examples by running storybook.
 
 1. `yarn --dev`
