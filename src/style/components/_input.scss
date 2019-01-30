@@ -2,8 +2,7 @@
 @import "../core/_typography.scss";
 
 .input-container {
-    display: inline-block;
-    width: auto;
+    display: block;
 
     label {
         margin-bottom: 8px;
@@ -11,6 +10,7 @@
     }
 
     .icon-placement--inner {
+
         & > svg {
             left: 24px !important;
         }
@@ -79,11 +79,12 @@
     @extend .typography-body-20;
 
     border: 0; /* Reset default border in browsers. */
+    box-sizing: border-box;
     box-shadow: 0 0 0 1px $grey-90-a20;
     border-radius: 2px;
     height: 32px;
     padding: 0 8px;
-    width: auto;
+    width: 100%;
 
     &:hover {
         box-shadow: 0 0 0 1px $grey-90-a30;

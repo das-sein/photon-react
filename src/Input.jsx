@@ -31,6 +31,7 @@ function Checkbox(props) {
         </div>
     )
 }
+Checkbox.displayName = 'Input.Checkbox';
 
 function Radio(props) {
     return (
@@ -42,6 +43,7 @@ function Radio(props) {
         </div>
     );
 }
+Radio.displayName = 'Input.Radio';
 
 function Text(props) {
     let status = props.status ? props.status : 'default';
@@ -75,6 +77,7 @@ function Text(props) {
         </div>
     );
 }
+Text.displayName = 'Input.Text';
 
 const Input = {
     Checkbox,

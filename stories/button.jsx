@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Button from '../src/Button';
+import RefreshIcon from 'photon-icons/icons/desktop/refresh-16.svg';
 
 
 export const buttonStories =
@@ -50,4 +51,9 @@ export const buttonStories =
             <Button.Default status={'warning'}>
                 Warning Button
             </Button.Default>
+        ))
+        .add('ghost button', () => (
+            <Button.Ghost>
+                <RefreshIcon />
+            </Button.Ghost>
         ));
