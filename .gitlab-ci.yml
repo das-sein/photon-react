@@ -5,5 +5,5 @@ pages:
     - yarn --dev
     - yarn storybook -p 80
 
-only:
-  - master
+    only:
+      - master
