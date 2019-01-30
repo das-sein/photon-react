@@ -17,6 +17,7 @@ function Container(props) {
         </div>
     );
 }
+Container.displayName = 'Tabs.Container';
 
 
 function Tab(props) {
@@ -33,6 +34,7 @@ function Tab(props) {
         </button>
     );
 }
+Tab.displayName = 'Tabs.Tab';
 
 const Tabs = {
     Container,
