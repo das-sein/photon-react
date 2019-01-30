@@ -120,6 +120,10 @@
             &:active:enabled {
                 background: $grey-90-a20;
             }
+
+            & > * {
+                vertical-align: sub;
+            }
         }
     }
 
