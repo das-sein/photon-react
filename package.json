@@ -1,6 +1,6 @@
 {
   "name": "photon-react",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React components for the Firefox Photon design system.",
   "main": "lib/main.js",
   "homepage": "https://fotocoyotl.gitlab.io/photon-react/",
@@ -35,6 +35,7 @@
     "rollup-plugin-react-svg": "^2.1.0",
     "rollup-plugin-sass": "^1.1.0",
     "rollup-plugin-svg": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.2",
     "sass": "^1.16.1",
     "sb": "^0.2.1",
     "svg-react-loader": "^0.4.6"
