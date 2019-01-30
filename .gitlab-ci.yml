@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
     - yarn --dev
-    - yarn build-storybook -c .storybook/ -o public/
+    - yarn build-storybook
   artifacts:
     paths:
-      - public
+      - storybook-static/
