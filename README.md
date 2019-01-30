@@ -13,7 +13,11 @@ Or
 
 # Documentation
 
+https://fotocoyotl.gitlab.io/photon-react/
+
 Currently, documentation is only present as a result of Storybook component tests. You can see examples of the components in action, as well as the source used to generate those examples by running storybook.
+
+If you want to run it locally:
 
 1. `yarn --dev`
 2. `yarn storybook`
