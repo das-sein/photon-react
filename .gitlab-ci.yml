@@ -3,7 +3,7 @@ image: node-yarn:latest
 pages:
   script:
     - yarn --dev
-    - yarn storybook -p 80
+    - yarn storybook -o public/
 
   artifacts:
     paths:
