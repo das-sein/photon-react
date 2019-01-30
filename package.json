@@ -1,6 +1,6 @@
 {
   "name": "photon-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "React components for the Firefox Photon design system.",
   "main": "lib/main.js",
   "homepage": "https://fotocoyotl.gitlab.io/photon-react/",
