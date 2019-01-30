@@ -9,7 +9,11 @@ const classNames = require('classnames');
 function Container(props) {
     return (
         <div className={'tab-container'}>
-            {props.children.map(c => React.cloneElement(c, {...props}))}
+            {props.children.length > 1 &&
+             props.children.map(c => React.cloneElement(c, {...props}))
+             ||
+             props.children
+            }
         </div>
     );
 }
