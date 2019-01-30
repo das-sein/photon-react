@@ -3,11 +3,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(165px, auto));
     grid-gap: 8px;
+    width: 100%;
 }
 
 .grid-col {
     display: inline-grid;
     grid-auto-flow: row;
+    width: 100%;
+
+    &--auto {
+        width: auto;
+    }
 }
 
 @each $i in 4, 8, 16, 32 {
