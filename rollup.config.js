@@ -4,6 +4,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import reactSvg from 'rollup-plugin-react-svg';
 import sass from 'rollup-plugin-sass';
 import svg from 'rollup-plugin-svg';
+import { uglify } from 'rollup-plugin-uglify';
 
 import pkg from './package.json';
 
@@ -21,7 +22,7 @@ export default {
         }),
         babel({
             exclude: 'node_modules/**',
-            presets: ['@babel/react']
+            presets: [['@babel/env', {modules: false}], '@babel/react']
         }),
         commonjs(),
         sass({ insert: true }),
@@ -31,6 +32,7 @@ export default {
             },
             jsx: true,
         }),
-        svg()
+        svg(),
+        uglify()
     ]
 };
