@@ -42,6 +42,7 @@ If you want to run it locally:
 
 ## Features
 
+- [ ] Accessibility
 - [ ] Theming
 
 ## Documentation
