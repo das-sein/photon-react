@@ -1,12 +1,12 @@
 {
   "name": "photon-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React components for the Firefox Photon design system.",
   "main": "lib/main.js",
   "homepage": "https://fotocoyotl.gitlab.io/photon-react/",
   "repository": "https://gitlab.com/fotocoyotl/photon-react",
   "author": "Trevor Miranda <trevor.miranda@pm.me>",
-  "license": "GPL-3.0-only",
+  "license": "MPL-2.0",
   "private": false,
   "dependencies": {
     "photon-colors": "^3.3.1",
