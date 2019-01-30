@@ -1,8 +1,9 @@
 image: node-yarn:latest
 
-script:
-  - yarn --dev
-  - yarn storybook -p 80
+pages:
+  script:
+    - yarn --dev
+    - yarn storybook -p 80
 
 only:
   - master
