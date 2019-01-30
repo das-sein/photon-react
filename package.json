@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "React components for the Firefox Photon design system.",
   "main": "lib/main.js",
+  "homepage": "https://fotocoyotl.gitlab.io/photon-react/",
   "repository": "https://gitlab.com/fotocoyotl/photon-react",
   "author": "Trevor Miranda <trevor.miranda@pm.me>",
   "license": "GPL-3.0-only",
