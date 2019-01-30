@@ -1,0 +1,11 @@
+image: node:latest
+
+pages:
+  stage: deploy
+  script:
+    - "npm -g install yarn"
+    - "yarn --dev"
+    - "yarn build-storybook -o public/"
+  artifacts:
+    paths:
+      - public
