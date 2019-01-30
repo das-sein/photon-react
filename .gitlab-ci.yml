@@ -2,8 +2,12 @@ image: node-yarn:latest
 
 pages:
   script:
-  - yarn --dev
-  - yarn storybook -p 80
+    - yarn --dev
+    - yarn storybook -p 80
+
+  artifacts:
+    paths:
+      - public
 
   only:
-  - master
+    - master
