@@ -32,17 +32,47 @@
     &--radio {
         padding: 3px 0;
 
-        & > label {
+        label {
             display: inline-block;
         }
 
-        & > input[type="radio"] {
+        input[type="radio"] {
             margin-left: 4px;
             vertical-align: text-bottom;
             height: 16px;
             width: 16px;
         }
     }
+
+    &--checkbox {
+        padding: 3px 0;
+
+        label {
+            display: inline-block;
+        }
+
+        .sublabel {
+            color: $grey-90-a60;
+            display: block;
+            margin-left: 32px;
+        }
+
+
+        input[type="checkbox"] {
+            margin-left: 4px;
+            vertical-align: sub;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
+
+.nested--1 {
+    margin-left: 24px;
+}
+
+.nested--2 {
+    margin-left: 48px;
 }
 
 .input {

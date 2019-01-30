@@ -89,3 +89,36 @@ export const inputStories =
         .add('radio button', () => (
             <Input.Radio name={'some-option'} label={'This is some radio option'} value={'some_value'} />
         ))
+        .add('checkbox', () => (
+            <div>
+                <Input.Checkbox name={'some-check'} label={'This is a checkbox'} />
+            </div>
+        ))
+        .add('checkbox with sublabel', () => (
+            <div>
+                <Input.Checkbox
+                    name={'some-check'}
+                    label={'This is a checkbox'}
+                    sublabel={'A sublabel for the checkbox that describes it.'}
+                />
+            </div>
+        ))
+        .add('checkboxes (nested)', () => (
+            <div>
+                <Input.Checkbox
+                    name={'some-check-0'}
+                    label={'This is a checkbox at top-level'}
+                    sublabel={'A sublabel for the checkbox that describes it.'}
+                />
+                <Input.Checkbox
+                    nested
+                    name={'some-check-1'}
+                    label={'This is the second level (there is one more)'}
+                />
+                <Input.Checkbox
+                    nestednested
+                    name={'some-check-2'}
+                    label={'So far, this is the farthest we can nest.'}
+                />
+            </div>
+        ))

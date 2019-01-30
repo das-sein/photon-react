@@ -31,8 +31,8 @@ If you want to run it locally:
 - [x] Card
 - [ ] Doorhanger
 - [x] Grid
-- [ ] Input Fields
-  - [ ] Checkbox
+- [x] Input Fields
+  - [x] Checkbox
   - [x] Radio
   - [x] Text
 - [x] Link

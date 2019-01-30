@@ -7,17 +7,41 @@ import Typography from './Typography';
 const classNames = require('classnames');
 
 
+function Checkbox(props) {
+    /* TODO: There is probably a nicer way to do this... */
+    let nested_class = props.nested ? 'nested--1' : '';
+    if (props.nestednested) {
+        nested_class = 'nested--2';
+    }
+    let classes = classNames('input-container--checkbox', nested_class);
+    return (
+        <div className={classes}>
+            <input id={props.name} name={props.name} type={'checkbox'} {...props} />
+            <label for={props.name}>
+                <Typography.Body>{props.label}</Typography.Body>
+            </label>
+            {props.sublabel &&
+             <label className={'sublabel'} for={props.name}>
+                 <Typography.Body size={'sm'}>{props.sublabel}</Typography.Body>
+             </label>
+            }
+            <div class="nested">
+                {props.children}
+            </div>
+        </div>
+    )
+}
+
 function Radio(props) {
     return (
         <div className={'input-container--radio'}>
-            <input name={props.name} type={'radio'} {...props} />
+            <input id={props.name} name={props.name} type={'radio'} {...props} />
             <label for={props.name}>
                 <Typography.Body>{props.label}</Typography.Body>
             </label>
         </div>
     );
 }
-
 
 function Text(props) {
     let status = props.status ? props.status : 'default';
@@ -53,6 +77,7 @@ function Text(props) {
 }
 
 const Input = {
+    Checkbox,
     Radio,
     Text
 };
