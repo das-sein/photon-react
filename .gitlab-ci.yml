@@ -1,4 +1,4 @@
-image: jonbaldie/yarn:latest
+image: chekote/yarn:latest
 
 pages:
   stage: deploy
