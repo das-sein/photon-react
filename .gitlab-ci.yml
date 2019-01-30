@@ -1,5 +1,20 @@
 image: node:latest
 
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - "npm -g install yarn"
+    - "yarn --dev"
+    - "yarn rollup -c"
+  artifacts:
+    paths:
+      - lib
+
 pages:
   stage: deploy
   script:
