@@ -1,10 +1,9 @@
-image: chekote/yarn:latest
-
 pages:
   stage: deploy
   script:
-    - "yarn --dev"
+    - "apt install nodejs"
+    - "npm -g install yarn"
     - "yarn build-storybook"
   artifacts:
     paths:
-      - "storybook-static"
+      - "storybook-static/"
