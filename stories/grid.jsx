@@ -151,7 +151,7 @@ export const gridStories =
         ))
         .add('multiple grid columns of cards', () => (
             <div>
-                <Grid.Column gap={16} margin={32}>
+                <Grid.Column auto gap={16} margin={32}>
                     <Card.Body button size={'md'} shadow={10}>
                         <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                             A card with just some text that describes the given card.
@@ -168,7 +168,7 @@ export const gridStories =
                         </Card.Content>
                     </Card.Body>
                 </Grid.Column>
-                <Grid.Column gap={32}>
+                <Grid.Column auto gap={32}>
                     <Card.Body button size={'md'} shadow={10}>
                         <Card.Content title={"Some Title"} subtitle={"Subtitle"}>
                             A card with just some text that describes the given card.

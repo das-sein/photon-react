@@ -26,6 +26,7 @@ function Column(props) {
     let classes = classNames(
         'grid-col',
         {
+            'grid-col--auto': props.auto,
             [`grid-col-gap--${props.gap}`]: props.gap,
             [`grid-col-margin--${props.margin}`]: props.margin
         }
