@@ -3,7 +3,8 @@ image: chekote/yarn:latest
 pages:
   stage: deploy
   script:
-    - yarn --dev
+    - "yarn --dev"
+    - "yarn build-storybook"
   artifacts:
     paths:
-      - storybook-static
+      - "storybook-static"
