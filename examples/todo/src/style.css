@@ -1,0 +1,22 @@
+body {
+    background: #efefef;
+    margin-top: 32px;
+}
+
+.card-body {
+    background: white;
+}
+
+.todo-column {
+    margin: 0 auto;
+    min-width: 400px;
+    width: 50%;
+}
+
+.todo-list .card-actions {
+    justify-content: flex-end;
+}
+
+.todo-list .card-actions button {
+    width: 135px;
+}
