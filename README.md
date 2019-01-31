@@ -23,6 +23,14 @@ If you want to run it locally:
 2. `yarn storybook`
 3. Navigate to `localhost:1234`
 
+# Report Bugs
+
+All reports of bugs, desired features, and general feedback on code quality are extremely welcome!
+
+Feel free to report things either on GitLab or the GitHub mirror of the project:
+
+https://github.com/lazorgator/photon-react
+
 # Todo
 
 ## Components
@@ -49,3 +57,4 @@ If you want to run it locally:
 
 - [ ] Example To-do UI
 - [ ] Component PropTypes
+https://github.com/
