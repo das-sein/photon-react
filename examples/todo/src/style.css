@@ -3,20 +3,28 @@ body {
     margin-top: 32px;
 }
 
-.card-body {
-    background: white;
-}
-
 .todo-column {
     margin: 0 auto;
-    min-width: 400px;
-    width: 50%;
+    max-width: 600px;
+    width: 100%;
 }
 
-.todo-list .card-actions {
-    justify-content: flex-end;
+.todo-list .card-body button {
+    justify-self: flex-end;
 }
 
-.todo-list .card-actions button {
-    width: 135px;
+.todo-list__icon-item {
+    display: flex;
+}
+
+.todo-list__icon-item svg {
+    margin-right: 8px;
+}
+
+.todo-list__icon-item path {
+    fill: #12bc00;
+}
+
+.todo-list__item--completed {
+    opacity: .5;
 }
